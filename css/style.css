@@ -116,7 +116,10 @@ body {
       grid-column: 1/-1;
       grid-row: 1/2;
       justify-content: flex-end;
-      align-items: center; } }
+      align-items: center;
+      background-color: rgba(198, 153, 99, 0.5);
+      position: sticky;
+      top: 0; } }
 
 .nav-btn {
   border: none;
