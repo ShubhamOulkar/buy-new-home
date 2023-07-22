@@ -9,9 +9,16 @@
 
     display: grid;
     grid-template-columns: minmax(min-content, max-content);
-    ;
     grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-medium){
+        grid-column: 1/-1;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        padding: 3rem;
+    }
 
     &__logo {
         height: 3rem;
@@ -34,7 +41,6 @@
            height: 1px;
            display: block;
            background-color: currentColor;
-
         }
     }
 
